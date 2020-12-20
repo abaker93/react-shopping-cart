@@ -3,9 +3,13 @@ import Header from './Header';
 
 const Contact = () => {
     return (
-        <div>
+        <div className="contact">
             <Header />
-            <h1>Hello from Contact!</h1>
+            <h1>Contact Us!</h1>
+            <p>123 Address St</p>
+            <p>City, ST, ZIP</p>
+            <p>555-555-5555</p>
+            <p>info@website.com</p>
         </div>
     )
 }

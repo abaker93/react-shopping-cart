@@ -2,25 +2,33 @@ import React from 'react';
 import { useState } from 'react'
 import Header from './Header';
 import Footer from './Footer';
+
 import stripedGrayWolf from '../img/stripedGrayWolf.webp'
+import reginaldFox from '../img/reginaldFox.webp'
+import pedroRam from '../img/pedroRam.webp'
+import nicholasBearCub from '../img/nicholasBearCub.webp'
 
 const Home = () => {
     const [products] = useState([
         {
             img: stripedGrayWolf,
-            title: 'Striped Gray Wolf'
+            title: 'Striped Gray Wolf',
+            price: 58.00
         },
         {
-            img: stripedGrayWolf,
-            title: 'Reginald Fox'
+            img: reginaldFox,
+            title: 'Reginald Fox',
+            price: 50.00
         },
         {
-            img: stripedGrayWolf,
-            title: 'Pedro Ram'
+            img: pedroRam,
+            title: 'Pedro Ram',
+            price: 35.00
         },
         {
-            img: stripedGrayWolf,
-            title: 'Nicholas Bear Cub'
+            img: nicholasBearCub,
+            title: 'Nicholas Bear Cub',
+            price: 50.00
         }
     ])
 
@@ -45,6 +53,7 @@ const Home = () => {
                         <div className="card">
                             <img src={e.img} alt={e.title} />
                             <p>{e.title}</p>
+                            <p>${e.price.toFixed(2)}</p>
                         </div>
                     )
                 })}
