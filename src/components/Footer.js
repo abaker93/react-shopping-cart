@@ -10,19 +10,19 @@ const Footer = () => {
             <div>
                 <h3>Information</h3>
                 <ul>
-                    <li><a href="">FAQ</a></li>
-                    <li><a href="">Shipping & Returns</a></li>
-                    <li><a href="">Terms & Conditions</a></li>
-                    <li><a href="">Impact Program</a></li>
+                    <li>FAQ</li>
+                    <li>Shipping & Returns</li>
+                    <li>Terms & Conditions</li>
+                    <li>Impact Program</li>
                 </ul>
             </div>
             <div>
                 <h3>Navigate</h3>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Shop</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li>Home</li>
+                    <li>Shop</li>
+                    <li>About</li>
+                    <li>Contact</li>
                 </ul>
             </div>
             <div>

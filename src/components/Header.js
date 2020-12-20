@@ -1,23 +1,24 @@
 import React from 'react';
 import logo from '../img/octoon-logo.svg';
+import basket from '../img/basket.svg';
 
 const Header = () => {
     return (
-        <div className="header">
+        <header className="header">
             <img src={logo} className="logo" alt="Octoon" />
             <ul className="menu">
                 <li><a href="./">Home</a></li>
                 <li><a href="./shop">Shop</a></li>
                 <li><a href="./about">About</a></li>
                 <li><a href="./contact">Contact</a></li>
-                <li>
+                <li className="cart">
                     <a href="./cart">
-                        Cart
+                        <img src={basket} alt="cart" />
                         <span className="cart-number">0</span>
                     </a>
                 </li>
             </ul>
-        </div>
+        </header>
     )
 }
 

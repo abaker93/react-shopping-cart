@@ -1,12 +1,13 @@
 import React from 'react';
-import { useState } from 'react'
+import { useState } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 
-import stripedGrayWolf from '../img/stripedGrayWolf.webp'
-import reginaldFox from '../img/reginaldFox.webp'
-import pedroRam from '../img/pedroRam.webp'
-import nicholasBearCub from '../img/nicholasBearCub.webp'
+import barleyBunny from '../img/barleyBunny.webp';
+import stripedGrayWolf from '../img/stripedGrayWolf.webp';
+import reginaldFox from '../img/reginaldFox.webp';
+import pedroRam from '../img/pedroRam.webp';
+import nicholasBearCub from '../img/nicholasBearCub.webp';
 
 const Home = () => {
     const [products] = useState([
@@ -36,18 +37,27 @@ const Home = () => {
         <div className="home">
             <Header />
             <div className="hero">
-                <h1>Whimsical Toys</h1>
-                <p>Our carefully curated collections of handcrafted toys spark joy and imagination. Perfect for creative kiddos.</p>
-                <button type="button">Shop Now</button>
+                <div>
+                    <img src={barleyBunny} alt="barley bunny" />
+                </div>
+                <div>
+                    <h1>Whimsical Toys</h1>
+                    <p>Our carefully curated collections of handcrafted toys spark joy and imagination. Perfect for creative kiddos.</p>
+                    <button type="button">Shop Now</button>
+                </div>
+                
             </div>
             <div className="about">
-                <h2>Shop, Play, Love</h2>
-                <p>This online boutique was created from our passion for unique toys, decor, and books for babies. We strive to provide the most timeless well-crafted items that we believe will enrich your parenting experience and bring endless joy to your little ones.</p>
-                <button type="button">About</button>
+                <div>
+                    <h2>Shop, Play, Love</h2>
+                    <p>This online boutique was created from our passion for unique toys, decor, and books for babies. We strive to provide the most timeless well-crafted items that we believe will enrich your parenting experience and bring endless joy to your little ones.</p>
+                    <button type="button">About</button>
+                </div>
             </div>
             <div className="shop">
                 <span className="subheader">New at Octoon</span>
                 <h2>The Bright & Bold Collection</h2>
+                <button type="button">Shop Now</button>
                 {products.map(e => {
                     return (
                         <div className="card">
