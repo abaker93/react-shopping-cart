@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react'
 import Header from './Header';
+import Footer from './Footer';
 
 import stripedGrayWolf from '../img/stripedGrayWolf.webp'
 import reginaldFox from '../img/reginaldFox.webp'
@@ -74,21 +75,24 @@ const Shop = () => {
 	])
 
 	return (
-		<div>
+		<div className="shop">
 			<Header />
 			<h1>Stuffed Animals</h1>
 			{products.map(e => {
 				return (
 					<div className="card">
 						<img src={e.img} alt={e.title} />
-						<p>{e.title}</p>
-						<p>${e.price.toFixed(2)}</p>
-						<button type="button">+</button>
-						<button type="button">Add 1 to cart</button>
-						<button type="button">-</button>
+						<h3>{e.title}</h3>
+						<p className="price">${e.price.toFixed(2)}</p>
+						<div className="btn-group">
+							<button type="button">+</button>
+							<button type="button">Add 1 to cart</button>
+							<button type="button">-</button>
+						</div>
 					</div>
 				)
 			})}
+			<Footer />
 		</div>
 	)
 }

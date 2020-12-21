@@ -242,6 +242,69 @@ header {
 
 }
 
+.shop {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    column-gap: 50px;
+    row-gap: 50px;
+
+    header {
+        grid-column: 1 / 5;
+    }
+
+    h1 {
+        grid-column: 1 / 5;
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .price {
+        color: #F49E4C;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .btn-group {
+        
+        button {
+            font-size: 12px;
+
+            &:nth-child(1) {
+                border-radius: 30px 0 0 30px;
+                padding: 10px 15px;
+                background-color: #BDD15A;
+
+                &:hover, &:focus { background-color: #ABC043; }
+
+            }
+
+            &:nth-child(2) {
+                border-radius: 0;
+                padding: 10px;
+            }
+
+            &:nth-child(3) {
+                border-radius: 0 30px 30px 0;
+                padding: 10px 15px;
+                background-color: #BDD15A;
+
+                &:hover, &:focus { background-color: #ABC043; }
+
+            }
+
+        }
+    
+    }
+
+    footer {
+        grid-column: 1 / 5;
+    }
+
+}
+
 footer {
     border-top: 1px solid #CCCCCC;
     padding: 50px 20px 0;

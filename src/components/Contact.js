@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Header';
+import Footer from './Footer';
 
 const Contact = () => {
     return (
@@ -10,6 +11,7 @@ const Contact = () => {
             <p>City, ST, ZIP</p>
             <p>555-555-5555</p>
             <p>info@website.com</p>
+            <Footer />
         </div>
     )
 }
